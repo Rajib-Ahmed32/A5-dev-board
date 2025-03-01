@@ -13,24 +13,218 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#f4f7ff] min-h-screen md:pt-3">
-    <nav class="border-gray-200 bg-white dark:border-gray-700 md:max-w-[90%] md:mx-auto md:rounded-2xl">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="./assets/logo.png" class="h-8" alt="Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DevBoard</span>
-          </a>
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+<body class="bg-blue-50 min-h-[800px] md:pt-4 md:px-8">
+    <!--Header starts here-->
+    <header>
+        <nav class="border-gray-200 bg-gray-300  lg:max-w-[95%] md:mx-auto md:rounded-2xl">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                  <img src="./assets/logo.png" class="h-8" alt="Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DevBoard</span>
+              </a>
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+    
+                <button type="button" class="px-6 py-2 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-[#f4f7ff]">
+                   <img src="./assets/checkbox.png" alt="checkbox" class="w-[20px] mr-2">                 
+                    23
+                  </button>
+                  
+                <img src="./assets/theme-btn.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            </div>
+          </nav>
+    </header>
+    <!--Header ends here-->
 
-            <button type="button" class="px-6 py-2 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-[#f4f7ff]">
-               <img src="./assets/checkbox.png" alt="checkbox" class="w-[20px] mr-2">                 
-                23
-              </button>
-              
-            <img src="./assets/theme-btn.png" class="h-8" alt="Flowbite Logo" />
-        </a>
-        </div>
-      </nav>
+    <main>
+        <!--Features section starts here-->
+        <div class="min-h-screen shadow-lg bg-blue-50 my-5 mx-4 md:rounded-2xl overflow-hidden grid md:grid-cols-[2.5fr_1fr] lg:grid-cols-[3.5fr_1fr] lg:max-w-[95%] md:mx-auto gap-4  shadow-lg">
+            
+
+            <div class="order-1 md:order-none bg-gray-300 rounded-2xl p-3">
+                <div class="flex items-center block rounded-2xl bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] lg:hidden justify-center px-5 mb-[12px] py-3 bg-[#f4f7ff]">
+                    <img src="./assets/board.png" alt="board" class="mr-2">
+                    <a class="hover:underline text-lg lg:text-2xl font-semibold text-white">Discover Something <br>New Today!</a>
+                </div>
+            
+                <div class="grid grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-3">
+    
+                    <div class="flex items-center justify-center px-5 py-3 bg-blue-50 h-full rounded-2xl">
+                        <button type="button" class="px-3 py-3 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-white">
+                            <img src="./assets/checkbox.png" alt="checkbox" class="w-[20px]">                 
+                        </button>
+                        <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
+                            <div class="text-base font-medium text-[#00303C]">Task Assigned</div>
+                            <div class="text-black text-xl lg:text-2xl font-extrabold ">05</div>
+                        </div>
+                    </div>
+                
+                    <div class="flex items-center bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] justify-center rounded-2xl hidden lg:flex px-5 mb-[12px] py-3 bg-[#f4f7ff] space-x-2 h-full">
+                        <img src="./assets/board.png" alt="board" class="mr-2">
+                        <a href="#" class="hover:underline text-lg lg:text-2xl font-semibold text-white">Discover Something <br>New Today!</a>
+
+                    </div>
+                
+                    <div class="flex items-center justify-center px-5 py-3 bg-blue-50 h-full rounded-2xl">
+                        <button type="button" class="px-3 py-3 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-white">
+                            <img src="./assets/calender.png" alt="calendar" class="w-[20px]">                 
+                        </button>
+                        <div class="space-y-0.5 text-base lg:leading-8 lg:text-[22px] font-medium text-[#00303C] text-left rtl:text-right ms-3">
+                            <div>Wed, <br> <span class="text-black text-xl font-extrabold">Jul 28 2025</span></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <hr class="border-t-2 border-dashed border-white mt-5">
+
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4 pt-4">
+                    <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                          ShopEase
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Fix Mobile Button Issue</h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                          Debug using Chrome DevTools, check for overlapping...
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                            CloudSync
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Add Dark Mode</h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                            Store the user's preference in localStorage, update CSS.....
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+
+
+                      <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                            SwiftPay
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Optimize  Home page </h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                          Debug using Chrome DevTools, check for overlapping...
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+
+
+                      <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                            Meta
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Add new emoji 🤲</h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                          Debug using Chrome DevTools, check for overlapping...
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+
+
+                      <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                            Google LLC
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Integrate OpenAI API </h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                          Debug using Chrome DevTools, check for overlapping...
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+
+
+                      <div class=" bg-blue-50 p-4 rounded-2xl shadow-md">
+                        <div class="bg-white text-[#00303C] text-sm font-semibold px-3 py-1 rounded-md w-fit shadow-sm">
+                            Glassdoar
+                        </div>
+                        <h2 class="text-lg font-bold text-gray-800 mt-3">Improve Job searching </h2>
+                        <div class="bg-white p-3 rounded-md text-gray-600 text-sm mt-2 shadow-sm">
+                          Debug using Chrome DevTools, check for overlapping...
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          <div class="text-sm text-gray-700">
+                            <span class="font-semibold">Deadline</span> <br>
+                            <span class="text-gray-900">21 March 2025</span>
+                          </div>
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                      
+                </div>
+
+
+            </div>
+
+            <div class="bg-gray-300 rounded-2xl min-h-[200px] md:p-2 md:pt-4 md:h-full p-8
+            ">
+                <div class="flex flex-col items-center space-y-2">
+                    <div class="flex items-center space-x-2 mb-2">
+                      <img src="./assets/activity.png" alt="Logo" class="w-6 h-6" />
+                      <h2 class="text-lg font-semibold text-gray-700 text-center">Activity Log</h2>
+                    </div>
+                    <button class="w-fit px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-md">
+                        Clear History
+                      </button>                                        
+                  </div>
+                  <div class="mt-4 space-y-2 border-t-2 border-dashed border-white  pt-4">
+                    <div class="p-3 bg-blue-50  rounded-lg text-sm text-gray-700">
+                      You have Completed The Task Add Dark Mode at 12:48:15 PM
+                    </div>
+                    <div class="p-3 bg-blue-50  rounded-lg text-sm text-gray-700">
+                      You have Completed The Task Add Dark Mode at 12:48:15 PM
+                    </div>
+                  </div>
+            </div>
+                  
+            </div>
+        <!--Features section Ends here-->
+    </main>
     <script src="./script/script-1.js"></script>
 </body>
 </html>
