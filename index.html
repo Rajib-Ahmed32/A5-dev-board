@@ -24,9 +24,9 @@
               </a>
               <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
     
-                <button type="button" class="px-6 py-2 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-[#f4f7ff]">
+                <button type="button" class="px-6 py-2 text-md font-bold text-black inline-flex items-center rounded-2xl text-center bg-[#f4f7ff]" >
                    <img src="./assets/checkbox.png" alt="checkbox" class="w-[20px] mr-2">                 
-                    23
+                    <span id="increment-value">23</span>
                   </button>
                   
                 <img src="./assets/theme-btn.png" class="h-8" alt="Flowbite Logo" />
@@ -44,7 +44,7 @@
             <div class="order-1 md:order-none bg-gray-300 rounded-2xl p-3">
                 <div class="flex items-center block rounded-2xl bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] lg:hidden justify-center px-5 mb-[12px] py-3 bg-[#f4f7ff]">
                     <img src="./assets/board.png" alt="board" class="mr-2">
-                    <a class="hover:underline text-lg lg:text-2xl font-semibold text-white">Discover Something <br>New Today!</a>
+                    <a class="hover:underline text-lg lg:text-2xl font-semibold text-white go-blog">Discover Something <br>New Today!</a>
                 </div>
             
                 <div class="grid grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-3">
@@ -55,13 +55,13 @@
                         </button>
                         <div class="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
                             <div class="text-base font-medium text-[#00303C]">Task Assigned</div>
-                            <div class="text-black text-xl lg:text-2xl font-extrabold ">05</div>
+                            <div class="text-black text-xl lg:text-2xl font-extrabold" id="decrement-value">6</div>
                         </div>
                     </div>
                 
                     <div class="flex items-center bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] justify-center rounded-2xl hidden lg:flex px-5 mb-[12px] py-3 bg-[#f4f7ff] space-x-2 h-full">
                         <img src="./assets/board.png" alt="board" class="mr-2">
-                        <a href="#" class="hover:underline text-lg lg:text-2xl font-semibold text-white">Discover Something <br>New Today!</a>
+                        <a href="#" class="hover:underline text-lg lg:text-2xl font-semibold text-white go-blog">Discover Something <br>New Today!</a>
                     </div>
                 
                     <div class="flex items-center justify-center px-5 py-3 bg-blue-50 h-full rounded-2xl">
@@ -69,7 +69,9 @@
                             <img src="./assets/calender.png" alt="calendar" class="w-[20px]">                 
                         </button>
                         <div class="space-y-0.5 text-base lg:leading-8 lg:text-[22px] font-medium text-[#00303C] text-left rtl:text-right ms-3">
-                            <div>Wed, <br> <span class="text-black text-xl font-extrabold">Jul 28 2025</span></div>
+                          <div><span id="real-day"></span>,<br> 
+                            <span id="real-date" class="text-black text-xl font-extrabold"></span>
+                          </div>
                         </div>
                     </div>
                     
@@ -90,7 +92,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -109,7 +111,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -129,7 +131,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -149,7 +151,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -169,7 +171,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -189,7 +191,7 @@
                             <span class="font-semibold">Deadline</span> <br>
                             <span class="text-gray-900">21 March 2025</span>
                           </div>
-                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md">
+                          <button class="bg-blue-600 text-white text-sm px-4 py-2 rounded-md font-semibold shadow-md complete-btn">
                             Completed
                           </button>
                         </div>
@@ -204,17 +206,12 @@
                       <img src="./assets/activity.png" alt="Logo" class="w-6 h-6" />
                       <h2 class="text-lg font-semibold text-gray-700 text-center">Activity Log</h2>
                     </div>
-                    <button class="w-fit px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-md">
+                    <button class="w-fit px-3 py-1.5 bg-blue-600 text-white text-sm font-medium rounded-md" id="clear-btn">
                         Clear History
                       </button>                                        
                   </div>
-                  <div class="mt-4 space-y-2 border-t-2 border-dashed border-white  pt-4">
-                    <div class="p-3 bg-blue-50  rounded-lg text-sm text-gray-700">
-                      You have Completed The Task Add Dark Mode at 12:48:15 PM
-                    </div>
-                    <div class="p-3 bg-blue-50  rounded-lg text-sm text-gray-700">
-                      You have Completed The Task Add Dark Mode at 12:48:15 PM
-                    </div>
+                  <div class="mt-4 space-y-2 border-t-2 border-dashed border-white  pt-4" id="task-adding-container">
+                   
                   </div>
             </div>
                   

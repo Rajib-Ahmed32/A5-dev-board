@@ -1,3 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.blurry {
+    opacity: 0.3;  
+    cursor: none; 
+}
