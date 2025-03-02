@@ -29,7 +29,8 @@ for (let i = 0; i < completeBtn.length; i++) {
         if (i >= 0 && i <= 4) {
             alert("Board Updated Successfully");
         } else {
-            alert("All tasks are completed");
+            alert("Board Updated Successfully")
+            alert("Congrats! You Have Completed All the Current Tasks");
         }
 
         // Decrement logic
@@ -78,11 +79,23 @@ for(let i = 0; i < goBlogs.length; i++){
 }
 
 
-
-
 //Clear button interaction
 document.getElementById("clear-btn").addEventListener("click", function(){
    taskContainer.innerHTML = " ";
 })
 
 
+const colorBtn = document.getElementById("colorButton");
+
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    // RGB format
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+colorBtn.addEventListener("click", function() {
+    document.body.style.backgroundColor = getRandomColor();
+});

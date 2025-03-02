@@ -18,7 +18,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="./assets/logo.png" class="h-8" alt="Logo" />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DevBoard</span>
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span class="font-medium">Dev</span>Board</span>
           </a>
         
 
@@ -34,31 +34,30 @@
             
             <div class= "bg-blue-50 mb-3 px-4 rounded-lg py-4">
                 <p class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <hr class="border-t-2 border-dashed border-gray-300 my-3">
+                <p class="text-gray-600 mt-2">We can select many different ways to select element and elements from the dom...using html id attribute document.getElementById(), for multiple elements selecting document.getElementsByClassName(), tag name document.getElementsByTagName, using querySelector() selecting single element like css selectors and querySelectorAll() for multiple elements</p>
             </div>
             
             <div class="bg-blue-50 mb-3 px-5 rounded-lg py-4">
-                <p class="font-semibold">Question-2: What is the difference between innerHTML, innerText and textContent?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="font-semibold">Question-2: What are the difference between innerHTML, innerText and textContent?</p>
+                <hr class="border-t-2 border-dashed border-gray-300 my-3">
+                <p class="text-gray-600 mt-2">Difference between innerHTML, innerText and textContent are using innerHTML we can get and set html elements inside element if we change innerHTML it changes everything inside of the element...using innerText we can show text seeing on the page. It does not show extra space and hidden text...textContent shows all the texts even hidden text  inside of the element</p>
             </div>
             <div class="bg-blue-50 mb-3 px-4 rounded-lg py-4">
-                <p class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="font-semibold">Question-3: What is event delegation in the DOM</p>
+                <p class="text-gray-600 mt-2">Event delegation is a way to add events in elements..it adds one event listener to it's parent element...then events capability reflects to the child elements it is effective and time saving approach it works futuristic added child elements too.</p>
             </div>
             
             <div class="bg-blue-50 mb-3 px-4 rounded-lg py-4">
-                <p class="font-semibold">Question-2: What is the difference between innerHTML, innerText and textContent?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="font-semibold">Question-4: What is event bubbles in the DOM</p>
+                <hr class="border-t-2 border-dashed border-gray-300 my-3">
+                <p class="text-gray-600 mt-2">Event bubbling is when event happen to child element, but it go up to parent elements too...If child and parent both have event, first child event run, then parent event run. Event not stop at child, it keep going up. This useful for event delegation, because parent can handle many child events...If not want event go up, can use event.stopPropagation(). Event bubbling make code easy and no need to add event on every child</p>
             </div>
 
             <div class="bg-blue-50 mb-3 px-4 rounded-lg py-4">
-                <p class="font-semibold">Question-1: What are the different ways to select an element in the DOM?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
-            </div>
-            
-            <div class="bg-blue-50 mb-3 px-4 rounded-lg py-4">
-                <p class="font-semibold">Question-2: What is the difference between innerHTML, innerText and textContent?</p>
-                <p class="text-gray-600 mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora tenetur illum illo hic, ipsum officia abcaecati culpa vel pariatur repellendus quibusdam.</p>
+                <p class="font-semibold">Question-5: How do you create, add and remove elements using javascript</p>
+                <hr class="border-t-2 border-dashed border-gray-300 my-3">
+                <p class="text-gray-600 mt-2">Using document.createElement() method we can create element in javascript in order to add created element in the dom appendChild() method is widely used it places the element to the last element of it's parent element...we remove element from the dom using removeChild() and remove() methods are used</p>
             </div>
         </div>
       </main>
