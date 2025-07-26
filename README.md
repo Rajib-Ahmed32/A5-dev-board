@@ -1,16 +1,65 @@
-# A5 Dev Board
+# 🚀 A5 Dev Board
 
-**A5 Dev Board** is a project management tool designed to streamline task assignment and tracking for development teams. The platform offers a user-friendly interface to monitor tasks, deadlines, and completion statuses, enhancing team productivity and collaboration.
+A5 Dev Board is a sleek and interactive task management tool built for developers. Designed with a clean, modern UI, it helps teams assign, track, and complete tasks efficiently — all in one place.
 
-## Features
+🔗 **Live Preview:** [Visit A5 Dev Board](https://merry-tiramisu-4be4cb.netlify.app/)
 
-- **Task Assignment:** Easily assign tasks to team members with clear descriptions and deadlines.
-- **Progress Tracking:** Monitor the status of tasks, including completion indicators.
-- **Activity Log:** Keep a detailed record of all activities for transparency and accountability.
+---
 
-- ## Sample Tasks  
+## 📌 Features at a Glance
 
-The A5 Dev Board facilitates efficient task tracking and management. Recent tasks include fixing a mobile button issue in **ShopEase** by debugging with Chrome DevTools to resolve overlapping elements. Another completed task involved adding a **dark mode feature** for **CloudSync**, where user preferences were stored in localStorage and applied via CSS updates.  
-For **SwiftPay**, the homepage was optimized by identifying and fixing layout issues through Chrome DevTools. Meanwhile, **Meta** successfully integrated new emoji support, ensuring proper functionality and seamless user experience.  
-Other key tasks included integrating the **OpenAI API** for **Google LLC**, enhancing AI-driven features, and improving **Glassdoor’s** job searching functionality by debugging user experience issues. All these tasks were completed by the deadline of **21 March 2025**, ensuring smooth and optimized performance across various projects.  
+- ✅ **Assigned Tasks Tracker** – Total assigned tasks with status overview  
+- 📅 **Deadline Tracking** – Each task includes a deadline and completion status  
+- 💡 **Task Details** – Includes task title, short description, and project name  
+- 🗓️ **Live Date Widget** – Displays current date  
+- 📝 **Developer Blog Section** – Contains helpful dev-related Q&A  
+- 🧾 **Activity Log** – Monitor task history with a clear option to clear logs  
+- 🌙 **Dark/Light Theme Toggle** – Color theme support (shown in header)
+
+---
+
+## 🎯 Sample Tasks Preview
+
+| Project      | Task Title            | Status     | Deadline       |
+|--------------|------------------------|------------|----------------|
+| ShopEase     | Fix Mobile Button Issue | ✅ Completed | 21 March 2025  |
+| CloudSync    | Add Dark Mode           | ✅ Completed | 21 March 2025  |
+| SwiftPay     | Optimize Home Page      | ✅ Completed | 21 March 2025  |
+| Meta         | Add New Emoji 🐱‍👤       | ✅ Completed | 21 March 2025  |
+| Google LLC   | Integrate OpenAI API    | ✅ Completed | 21 March 2025  |
+| Glassdoor    | Improve Job Searching   | ✅ Completed | 21 March 2025  |
+
+---
+
+## 📚 Developer Blog Preview
+
+> **Q1:** What are the different ways to select an element in the DOM?  
+Use `getElementById`, `getElementsByClassName`, `querySelector`, `querySelectorAll`, and more...
+
+> **Q2:** Difference between `innerHTML`, `innerText`, and `textContent`?  
+- `innerHTML`: gets/sets HTML inside  
+- `innerText`: visible text only  
+- `textContent`: includes hidden content too
+
+> **Q3:** What is event delegation in the DOM?  
+Attach a listener to a parent and handle events from children — efficient & scalable.
+
+> **Q4:** What is event bubbling in the DOM?  
+Events flow from child to parent. Use `stopPropagation()` to control.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** + **Tailwind CSS**  
+- **Custom Components** & Responsive Layout  
+- **Deployed on Netlify**
+
+---
+
+## 📅 Status
+
+✅ All tasks completed by **21 March 2025**  
+
+---
 
